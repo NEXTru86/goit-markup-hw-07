@@ -1,0 +1,99 @@
+.header {
+    padding-top: 4px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    }
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.header>.container>.address {
+    margin-left: auto;
+}
+
+.navigation .logo {
+    margin-right: 94px;
+}
+
+/* --links of menu-- */
+.navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigation-list-link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.navigation-list-link,
+.address-link-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+
+    transition-property: color; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link {
+    color: var(--title-color-white-them);
+}
+
+/* --links of mail and tel-- */
+.address-link-item {
+    color: var(--text-color);
+    fill: var(--text-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.address-link-item:hover,
+.address-link-item:focus {
+    color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+}
+
+.navigation-list-link.active {
+    color: var(--accent-text-color);
+    position: relative;
+}
+
+.navigation-list-link.active::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-text-color);
+    border-radius: 2px;
+}
+
+.address-list {
+    display: flex;
+}
+
+.address-list-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.adress-icon {
+    margin-right: 10px;
+}
+
+.address-link-item {
+    display: flex;
+    align-items: center;
+}
