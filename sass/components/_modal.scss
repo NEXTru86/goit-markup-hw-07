@@ -220,21 +220,8 @@
     color: var(--accent-text-color);
 }
 
-.bn-send {
+.modal__btn {
     display: block;
     padding: 10px 55px;
     margin: auto;
-
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: var(--text-btn-dark-theme);
-    background: var(--accent-text-color);
-    border-radius: 4px;
-    border-style: none;
-
-    cursor: pointer;
 }

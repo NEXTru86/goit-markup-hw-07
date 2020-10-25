@@ -37,6 +37,24 @@ body {
   font-style: normal;
 }
 
+.button {
+  padding: 10px 32px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--text-btn-dark-theme);
+  background: var(--accent-text-color);
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -446,22 +464,7 @@ img {
 .bn-subscription {
   display: inline-flex;
   align-items: center;
-  padding: 10px 32px;
   margin-left: -3.7px;
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--text-btn-dark-theme);
-  background: #2196F3;
-  border-radius: 4px;
-  border-style: none;
-  cursor: pointer;
-  transition-property: color, fill, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bn-subscription:hover,
