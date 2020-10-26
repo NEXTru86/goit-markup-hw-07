@@ -113,6 +113,11 @@
     padding-top: 12px;
 }
 
+.form {
+    display: flex;
+    align-items: flex-end;
+}
+
 .subscription label {
     display: inline-block;
 
@@ -153,10 +158,9 @@
 }
 
 .bn-subscription {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    
-    margin-left: -3.7px;
+    height: 50px;
 }
 
 .bn-subscription:hover,

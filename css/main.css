@@ -312,41 +312,30 @@ img {
   padding-top: 4px;
 }
 
-.header .container {
+.header__container, .header__navigation {
   display: flex;
   align-items: center;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list {
-  display: flex;
-}
-
-.header > .container > .address {
+.header__address {
   margin-left: auto;
 }
 
-.navigation .logo {
+.navigation__logo {
   margin-right: 94px;
 }
 
-/* --links of menu-- */
-.navigation-list-item:not(:last-child) {
+.navigation__list,
+.address__list {
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation-list-link {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.navigation-list-link,
-.address-link-item {
+.navigation__link,
+.address__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -356,30 +345,26 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-list-link {
-  color: var(--title-color-white-them);
-}
-
-/* --links of mail and tel-- */
-.address-link-item {
-  color: var(--text-color);
-  fill: var(--text-color);
-}
-
-.navigation-list-link:hover,
-.navigation-list-link:focus,
-.address-link-item:hover,
-.address-link-item:focus {
+.navigation__link:hover, .navigation__link:focus,
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-text-color);
   fill: var(--accent-text-color);
 }
 
-.navigation-list-link.active {
+.navigation__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: var(--title-color-white-them);
+}
+
+.navigation__link--active {
   color: var(--accent-text-color);
   position: relative;
 }
 
-.navigation-list-link.active::after {
+.navigation__link--active::after {
   display: block;
   position: absolute;
   bottom: 0;
@@ -390,21 +375,19 @@ img {
   border-radius: 2px;
 }
 
-.address-list {
+.address__link {
   display: flex;
+  align-items: center;
+  color: var(--text-color);
+  fill: var(--text-color);
 }
 
-.address-list-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.adress-icon {
+.address__icon {
   margin-right: 10px;
-}
-
-.address-link-item {
-  display: flex;
-  align-items: center;
 }
 
 .main-section .container {
@@ -776,6 +759,11 @@ img {
   padding-top: 12px;
 }
 
+.form {
+  display: flex;
+  align-items: flex-end;
+}
+
 .subscription label {
   display: inline-block;
   margin-right: 12px;
@@ -810,9 +798,9 @@ img {
 }
 
 .bn-subscription {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  margin-left: -3.7px;
+  height: 50px;
 }
 
 .bn-subscription:hover,
