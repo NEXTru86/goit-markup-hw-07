@@ -5,8 +5,8 @@
     line-height: 1.192;
     letter-spacing: 0.03em;
     color: #000000;
-}
 
-.logo-part {
-    color: var(--accent-text-color);
+    &-part {
+        color: var(--accent-text-color);
+    }
 }
