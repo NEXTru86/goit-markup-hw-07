@@ -9,4 +9,11 @@
     &-part {
         color: var(--accent-text-color);
     }
+
+    &--dark-theme {
+        display: inline-block;
+        margin-bottom: 20px;
+    
+        color: #FFFFFF;
+    }
 }
