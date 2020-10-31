@@ -20,7 +20,7 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--text-btn-dark-theme);
+        color: map-get($colors, "text-btn-dark-theme");
     }
 }
 
@@ -29,7 +29,7 @@
 
     &:hover,
     &:focus {
-        color: var(--active-text-btn-dark-theme);
-        background-color: var(--active-text-btn-white-theme);
+        color: map-get($colors, "active-text-btn-dark-theme");
+        background-color: map-get($colors, "active-text-btn-white-theme");
     }
 }

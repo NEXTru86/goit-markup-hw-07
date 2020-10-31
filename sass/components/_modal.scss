@@ -84,7 +84,7 @@
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--title-color-white-them);
+        color: map-get($colors, "title-white-them");
     }
 
     &-field {
@@ -123,12 +123,12 @@
 
         &:focus,
         &:hover {
-            border: 1px solid var(--accent-text-color);
+            border: 1px solid map-get($colors, "accent-text");
             outline: none;
         }
 
         &:not(:placeholder-shown) {
-            border: 1px solid var(--accent-text-color);
+            border: 1px solid map-get($colors, "accent-text");
             outline: none;
         }
     }
@@ -163,11 +163,11 @@
 
         .form-input:focus + &,
         .form-input:hover + & {
-        fill: var(--accent-text-color);
+        fill: map-get($colors, "accent-text");
         }
 
         .form-input:not(:placeholder-shown) + & {
-            fill: var(--accent-text-color);
+            fill: map-get($colors, "accent-text");
         }
     }
 
@@ -199,7 +199,7 @@
             line-height: 1.714;
             letter-spacing: 0.03em;
             text-decoration-line: underline;
-            color: var(--accent-text-color);
+            color: map-get($colors, "accent-text");
         }
     }
 }
@@ -217,10 +217,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     .form-checkbox-input:checked + & {
-        background-color: var(--accent-text-color);
+        background-color: map-get($colors, "accent-text");
         background-image: url(../imeges/modal/icon-check.svg);
         background-size: contain;
         background-origin: border-box;
-        border-color: var(--accent-text-color);
+        border-color: map-get($colors, "accent-text");
     }
 }

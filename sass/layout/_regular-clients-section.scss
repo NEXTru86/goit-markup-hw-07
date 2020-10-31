@@ -30,8 +30,8 @@
 
         &:hover,
         &:focus {
-            border:1px solid var(--accent-text-color);
-            fill: var(--accent-text-color);
+            border:1px solid map-get($colors, "accent-text");
+            fill: map-get($colors, "accent-text");
         }
     }
 }

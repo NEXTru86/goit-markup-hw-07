@@ -45,7 +45,7 @@
         margin-bottom: 10px;
     
         font-weight: 500;
-        color: var(--title-color-white-them);
+        color: map-get($colors, "title-white-them");
     }
 
     &-text {    

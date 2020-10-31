@@ -37,7 +37,7 @@
         font-size: 18px;
         line-height: 1.556;
         letter-spacing: 0.03em;
-        color: var(--title-color-dark-theme);
+        color: map-get($colors, "title-dark-theme");
         background-color: rgba(33, 150, 243, 0.9);
     
         transform: translatey(100%);
@@ -85,13 +85,13 @@
         font-size: 18px;
         line-height: 2.000;
         letter-spacing: 0.06em;
-        color: var(--title-color-white-them);
+        color: map-get($colors, "title-white-them");
     }
 
     &-item-text {
         font-size: 16px;
         line-height: 1.875;
         letter-spacing: 0.03em;
-        color: var(--text-color);
+        color: map-get($colors, "text-main");
     }
 }

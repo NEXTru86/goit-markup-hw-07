@@ -14,7 +14,7 @@
 
     &:hover,
     &:focus {
-        background-color: var(--accent-text-color);
-        fill: var(--text-btn-dark-theme);
+        background-color: map-get($colors, "accent-text");
+        fill: map-get($colors, "text-btn-dark-theme");
     }
 }

@@ -1,14 +1,6 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
-  --title-color-white-them: #212121;
-  --title-color-dark-theme: #FFFFFF;
-  --text-color: #757575;
-  --accent-text-color: #2196F3;
-  --text-btn-white-theme: #212121;
-  --text-btn-dark-theme: #FFFFFF;
-  --active-text-btn-white-theme: #FFFFFF;
-  --active-text-btn-dark-theme: #212121;
 }
 
 .visually-hidden {
@@ -34,7 +26,7 @@
 body {
   font-family: var(--main-font);
   font-style: normal;
-  color: var(--text-color);
+  color: #757575;
   background-color: #ffffff;
 }
 
@@ -58,8 +50,8 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: var(--text-btn-dark-theme);
-  background: var(--accent-text-color);
+  color: #FFFFFF;
+  background: #2196F3;
   border-radius: 4px;
   border-style: none;
   cursor: pointer;
@@ -91,13 +83,13 @@ img {
 }
 
 .logo-part {
-  color: var(--accent-text-color);
+  color: #2196F3;
 }
 
 .logo--dark-theme {
   display: inline-block;
   margin-bottom: 20px;
-  color: var(--active-text-btn-white-theme);
+  color: #FFFFFF;
 }
 
 .section-title {
@@ -107,7 +99,7 @@ img {
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color-white-them);
+  color: #212121;
 }
 
 .backdrop {
@@ -183,7 +175,7 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-color-white-them);
+  color: #212121;
 }
 
 .form-field {
@@ -214,12 +206,12 @@ img {
 }
 
 .form-input:focus, .form-input:hover, .form-comment:focus, .form-comment:hover {
-  border: 1px solid var(--accent-text-color);
+  border: 1px solid #2196F3;
   outline: none;
 }
 
 .form-input:not(:placeholder-shown), .form-comment:not(:placeholder-shown) {
-  border: 1px solid var(--accent-text-color);
+  border: 1px solid #2196F3;
   outline: none;
 }
 
@@ -253,11 +245,11 @@ img {
 
 .form-input:focus + .form-icon-svg,
 .form-input:hover + .form-icon-svg {
-  fill: var(--accent-text-color);
+  fill: #2196F3;
 }
 
 .form-input:not(:placeholder-shown) + .form-icon-svg {
-  fill: var(--accent-text-color);
+  fill: #2196F3;
 }
 
 .form-checkbox {
@@ -285,7 +277,7 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  color: var(--accent-text-color);
+  color: #2196F3;
 }
 
 .checkbox-icon {
@@ -301,11 +293,11 @@ img {
 }
 
 .form-checkbox-input:checked + .checkbox-icon {
-  background-color: var(--accent-text-color);
+  background-color: #2196F3;
   background-image: url(../imeges/modal/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  border-color: var(--accent-text-color);
+  border-color: #2196F3;
 }
 
 .icon-link {
@@ -323,8 +315,8 @@ img {
 }
 
 .icon-link:hover, .icon-link:focus {
-  background-color: var(--accent-text-color);
-  fill: var(--text-btn-dark-theme);
+  background-color: #2196F3;
+  fill: #FFFFFF;
 }
 
 .header {
@@ -367,19 +359,19 @@ img {
 .navigation__link:hover, .navigation__link:focus,
 .address__link:hover,
 .address__link:focus {
-  color: var(--accent-text-color);
-  fill: var(--accent-text-color);
+  color: #2196F3;
+  fill: #2196F3;
 }
 
 .navigation__link {
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
-  color: var(--title-color-white-them);
+  color: #212121;
 }
 
 .navigation__link--active {
-  color: var(--accent-text-color);
+  color: #2196F3;
   position: relative;
 }
 
@@ -390,15 +382,15 @@ img {
   content: "";
   width: 100%;
   height: 4px;
-  background-color: var(--accent-text-color);
+  background-color: #2196F3;
   border-radius: 2px;
 }
 
 .address__link {
   display: flex;
   align-items: center;
-  color: var(--text-color);
-  fill: var(--text-color);
+  color: #757575;
+  fill: #757575;
 }
 
 .address__item:not(:last-child) {
@@ -429,7 +421,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text-btn-dark-theme);
+  color: #FFFFFF;
 }
 
 .hero-btn {
@@ -437,8 +429,8 @@ img {
 }
 
 .hero-btn:hover, .hero-btn:focus {
-  color: var(--active-text-btn-dark-theme);
-  background-color: var(--active-text-btn-white-theme);
+  color: #212121;
+  background-color: #FFFFFF;
 }
 
 .our-adventages-section .container {
@@ -494,7 +486,7 @@ img {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-color-white-them);
+  color: #212121;
 }
 
 .adventages-text {
@@ -530,7 +522,7 @@ img {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-color-dark-theme);
+  color: #FFFFFF;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -576,7 +568,7 @@ img {
 .our-team-subtitle {
   margin-bottom: 10px;
   font-weight: 500;
-  color: var(--title-color-white-them);
+  color: #212121;
 }
 
 .our-team-text {
@@ -612,8 +604,8 @@ img {
 }
 
 .clients-link:hover, .clients-link:focus {
-  border: 1px solid var(--accent-text-color);
-  fill: var(--accent-text-color);
+  border: 1px solid #2196F3;
+  fill: #2196F3;
 }
 
 .footer {
@@ -646,7 +638,7 @@ img {
 }
 
 .footer__list__link:hover, .footer__list__link:focus {
-  color: var(--accent-text-color);
+  color: #2196F3;
 }
 
 .footer__social__list {
@@ -660,7 +652,7 @@ img {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--title-color-dark-theme);
+  color: #FFFFFF;
 }
 
 .footer__subtitle, .footer__subscription-desc {
@@ -683,11 +675,11 @@ img {
 
 .footer__icon-link {
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--text-btn-dark-theme);
+  fill: #FFFFFF;
 }
 
 .footer__icon-link:hover, .footer__icon-link:focus {
-  background-color: var(--accent-text-color);
+  background-color: #2196F3;
 }
 
 .footer__subscription {
@@ -707,7 +699,7 @@ img {
   font-size: 16px;
   line-height: 1.250;
   letter-spacing: 0.03em;
-  color: var(--text-btn-dark-theme);
+  color: #FFFFFF;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -721,7 +713,7 @@ img {
 }
 
 .footer__button:hover, .footer__button:focus {
-  color: var(--active-text-btn-dark-theme);
+  color: #212121;
   background-color: #FFFFFF;
 }
 
@@ -735,6 +727,6 @@ img {
 
 .footer__button:hover .footer__button-svg,
 .footer__button:focus .footer__button-svg {
-  fill: var(--active-text-btn-dark-theme);
+  fill: #212121;
 }
 /*# sourceMappingURL=main.css.map */
