@@ -1,71 +1,49 @@
-.our-adventages-section .container {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.our-adventages-section {
+    & .container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .adventages-list {
     display: flex;
     justify-content: space-between;
-}
 
-.adventages-list-item {
-    width: calc((100%-90px) / 4);
-}
+    &-item {
+        width: calc((100%-90px) / 4);
 
-.adventages-list-item:not(:last-child) {
-    margin-right: 30px;
-}
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
 
-.adventages-list-item:first-child::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color:#F5F4FA;
-    background-image: url(../imeges/our-advantages/antenna.svg);
-    border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+        &::before {
+            display: block;
+            content: "";
+            width: 270px;
+            height: 120px;
+            margin-bottom: 30px;
+            background-color:#F5F4FA;
+            border-radius: 4px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-.adventages-list-item:nth-child(2)::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color:#F5F4FA;
-    background-image: url(../imeges/our-advantages/clock.svg);
-    border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+        &:first-child::before {
+            background-image: url(../imeges/our-advantages/antenna.svg);
+        }
 
-.adventages-list-item:nth-child(3)::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color:#F5F4FA;
-background-image: url(../imeges/our-advantages/diagram.svg);
-    border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+        &:nth-child(2)::before {
+            background-image: url(../imeges/our-advantages/clock.svg);
+        }
 
-.adventages-list-item:last-child::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color:#F5F4FA;
-    background-image: url(../imeges/our-advantages/astronaut.svg);
-    border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
+        &:nth-child(3)::before {
+            background-image: url(../imeges/our-advantages/diagram.svg);
+        }
+
+        &:last-child::before {
+            background-image: url(../imeges/our-advantages/astronaut.svg);
+        }
+    }
 }
 
 .adventages-subtitle {
